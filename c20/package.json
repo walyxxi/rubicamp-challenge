@@ -1,0 +1,17 @@
+{
+  "name": "c20",
+  "version": "1.0.0",
+  "description": "WEB BREAD",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Waliyul Ardy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.6"
+  }
+}

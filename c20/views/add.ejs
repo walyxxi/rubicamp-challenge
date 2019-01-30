@@ -1,0 +1,54 @@
+
+<% include partials/header %>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading form-control-sm">
+            <h4 class="panel-title">Add Data</h4>
+        </div>
+        <form class="form-horizontal" action="add" method="post">
+            <div class="panel-body form-control-sm">
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">String</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="string" placeholder="String" name="string">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Integer</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="integer" placeholder="Integer" name="integer">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Float</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="float" placeholder="Float" name="float">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Date</label>
+                    <div class="col-sm-5">
+                        <input type="date" class="form-control form-control-sm" id="date" placeholder="End Date" name="date">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Boolean</label>
+                    <div class="col-sm-5">
+                        <select class="form-control form-control-sm" name="boolean">
+                            <option>Choose the boolean...</option>
+                            <option id="boolean">True</option>
+                            <option id="boolean">False</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <a href="/" class="btn btn-danger">Cancel</a>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+</div>
+<% include partials/footer %>

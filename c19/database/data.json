@@ -1,0 +1,58 @@
+[
+   {
+      "id": "1",
+      "string": "Saya",
+      "integer": "10",
+      "float": "10.00",
+      "date": "2019-01-13",
+      "boolean": "True"
+   },
+   {
+      "id": "2",
+      "string": "Kami",
+      "integer": "12",
+      "float": "13.33",
+      "date": "2018-11-08",
+      "boolean": "False"
+   },
+   {
+      "id": "3",
+      "string": "Mereka",
+      "integer": "20",
+      "float": "0.03",
+      "date": "2017-05-26",
+      "boolean": "True"
+   },
+   {
+      "id": 4,
+      "string": "Kita",
+      "integer": "34",
+      "float": "12.09",
+      "date": "2012-12-12",
+      "boolean": "False"
+   },
+   {
+      "id": 5,
+      "string": "Lampu",
+      "integer": "40",
+      "float": "12.98",
+      "date": "2080-02-09",
+      "boolean": "True"
+   },
+   {
+      "id": 6,
+      "string": "Bulan",
+      "integer": "9",
+      "float": "3.22",
+      "date": "2019-10-01",
+      "boolean": "True"
+   },
+   {
+      "id": 7,
+      "string": "Bintang",
+      "integer": "12",
+      "float": "5.89",
+      "date": "2019-04-01",
+      "boolean": "True"
+   }
+]

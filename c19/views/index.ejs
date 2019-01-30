@@ -1,0 +1,109 @@
+<% include partials/header %>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading form-control-sm">
+            <h4 class="panel-title">Filter</h4>
+        </div>
+        <form class="form-horizontal">
+            <div class="panel-body form-control-sm">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> ID</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="inputUsername3" placeholder="ID">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> String</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="inputPassword3" placeholder="String">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> Integer</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="inputPassword3" placeholder="Integer">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> Float</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-sm" id="inputPassword3" placeholder="Float">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> Date</label>
+                    <div class="col-sm-5">
+                        <input type="date" class="form-control form-control-sm" id="inputPassword3" placeholder="Start Data">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">to</label>
+                        <input type="date" class="form-control form-control-sm" id="inputPassword3" placeholder="End Date">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><input type="checkbox" value="" id="invalidCheck2"> Boolean</label>
+                    <div class="col-sm-5">
+                        <select class="form-control form-control-sm">
+                            <option>Choose the boolean...</option>
+                            <option>True</option>
+                            <option>False</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" role="button">Search</button>
+                        <button type="reset" class="btn btn-warning" role="button">Reset</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">String</th>
+                                <th scope="col">Integer</th>
+                                <th scope="col">Float</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Boolean</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% data.forEach((item) => { %>
+                            <tr>
+                                <td>
+                                    <%= item.id %>
+                                </td>
+                                <td>
+                                    <%= item.string %>
+                                </td>
+                                <td>
+                                    <%= item.integer %>
+                                </td>
+                                <td>
+                                    <%= item.float %>
+                                </td>
+                                <td>
+                                    <%= item.date %>
+                                </td>
+                                <td>
+                                    <%= item.boolean %>
+                                </td>
+                                <td>
+                                    <a href="edit/<%= item.id %>" class="btn btn-success">Edit</a>
+                                    <a href="delete/<%= item.id %>" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <a href="../add" type="submit" class="btn btn-primary">Add</a>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+<% include partials/footer %>

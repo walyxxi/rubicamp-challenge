@@ -1,0 +1,23 @@
+[
+   {
+      "status": false,
+      "task_content": "membersihkan tempat tidur",
+      "tag": [
+         "tempat",
+         "tidur"
+      ]
+   },
+   {
+      "status": true,
+      "task_content": "belanja ke pasar",
+      "tag": [
+         "tidur",
+         "malam"
+      ]
+   },
+   {
+      "status": false,
+      "task_content": "mengerjakan pekerjaan rumah",
+      "tag": []
+   }
+]

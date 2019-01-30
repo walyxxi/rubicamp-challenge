@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+<div class="container">
+  <br>
+  <br>
+  <a href="add" class="btn btn-primary">Tambah</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Task</th>
+        <th>actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach((item)=>{ %>
+      <tr>
+        <td>
+          <%= item.id %>
+        </td>
+        <td>
+          <%= item.task %>
+        </td>
+        <td><a href="delete/<%= item.id %>" class="btn btn-danger">delete</a></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+<% include ./partials/footer %>
